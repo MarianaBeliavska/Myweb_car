@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h4>Please update date of new car</h4>
+<form action="" method="post">
+    <p>Make by:</p>
+    <p><input type="text" name="makeinputas" value="{{row.make}}"></p>
+    <p>Model:</p>
+    <p><input type="text" name="modelinputas" value="{{row.modelis}}"></p>
+    <p>Color:</p>
+    <p><input type="text" name="colorinputas" value="{{row.color}}"></p>
+    <p>Year:</p>
+    <p><input type="text" name="yearinputas" value="{{row.year}}"></p>
+    <p>Price:</p>
+    <p><input type="text" name="priceinputas" value="{{row.price}}"></p>
+
+    <p><input type="submit" value="save"></p>
+</form>
+
+{% endblock %}

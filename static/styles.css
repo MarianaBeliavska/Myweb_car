@@ -1,0 +1,42 @@
+h1, h4 {
+    color: #9BC4E2; /* Pale Cerulean */
+    margin-top: 20px;
+}
+
+/* Set the background color for the body */
+body {
+    background-color: #F0FFF0; /* Honeydew */
+    color: #333; /* Darker text for contrast */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the table */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: 2px solid #d6681a;
+}
+
+/* Style for the table headers */
+th {
+    background-color: #9BC4E2; /* Pale Cerulean */
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #d6681a;
+}
+
+/* Style for the table cells */
+td {
+    background-color: #FFF; /* White */
+    padding: 10px;
+    border: 1px solid #d6681a;
+}

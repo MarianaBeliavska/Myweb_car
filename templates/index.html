@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h4>Cars list</h4>
+<form action="" method="get">
+  <p><input type="text" name="paieskoslaukelis"></p>
+  <p><input type="submit" value="filtruoti"></p>
+</form>
+<p>
+    <a href="/automobiliai/naujas">Input new car</a>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Year</th>
+            <th>Price</th>
+             <th>Do it</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for row in all_rows %}
+        <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.make }}</td>
+            <td>{{ row.model }}</td>
+            <td>{{ row.color }}</td>
+            <td>{{ row.year}}</td>
+            <td>{{ row.price}}</td>
+            <td><p>
+                <a href="/automobiliai/{{ row.id }}">look</a>
+                <a href="/automobiliai/redaguoti/{{ row.id }}">update</a>
+                <form action="/automobiliai/trinti/{{ row.id }}" method="post">
+                <input type="submit" value="delete">
+            </form>
+            </p></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}
